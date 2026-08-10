@@ -26,6 +26,10 @@
         );
         const linkPara = document.createElement('p');
         linkPara.appendChild(text);
+
+        section.appendChild(linkPara);
+        section.removeChild(linkPara);
+        linkPara.parentNode.removeChild(linkPara);
       </script>
   </body>
 </html>
